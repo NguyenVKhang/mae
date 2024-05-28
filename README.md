@@ -1,3 +1,4 @@
+Please switch to the master branch on git to see my custom code, data, and results.
 # BiGRec
 The BiGRec model utilizes PyTorch, you can read the details of the model at [BigRec](https://www.overleaf.com/read/ydkdtxsmmwkc#694d14)
 
