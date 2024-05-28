@@ -1,14 +1,15 @@
-# MAERec
+# BiGRec
+The BiGRec model utilizes PyTorch, you can read the details of the model at [BigRec](https://www.overleaf.com/read/ydkdtxsmmwkc#694d14)
 
-This is the PyTorch implementation by [@HelloElwin](https://github.com/HelloElwin) for MAERec proposed in the paper [*Graph Masked Autoencoder for Sequential Recommendation*](https://arxiv.org/abs/2305.04619) published in SIGIR'23 by [Yaowen Ye](https://helloelwin.github.io/), [Lianghao Xia](https://akaxlh.github.io/), and [Chao Huang](https://sites.google.com/view/chaoh).
-
-<img width="1362" alt="model" src="https://user-images.githubusercontent.com/40925586/236808551-aaf34e77-8e97-4043-8c6b-e83dd5fd943b.png">
+![image](https://github.com/NguyenVKhang/mae/assets/100186039/4ecebc10-819a-4c98-8fac-9bef143560cc)
 
 ### 1. Introduction
 
-MAERec is a simple yet effective graph masked autoencoder that adaptively and dynamically distills global item transitional information for self-supervised augmentation through a novel **adaptive transition path masking** strategy. It naturally addresses the data scarcity and noise perturbation problems in sequential recommendation scenarios and avoids issues in most contrastive learning-based methods.
+The BiGRec model is a bipartite graph-based recommender system that leverages contrastive learning and transformers for enhanced recommendation performance.
 
 ### 2. Environment
+
+
 
 We suggest the following environment for running MAERec:
 
@@ -58,15 +59,3 @@ def construct_graphs(num_items=54756, distance=3, path='./books/'):
         pickle.dump(iigraph, fs)
 ```
 
-### 5. Citing information
-
-If you find this work helpful to your research, please kindly consider citing our paper:
-
-```
-@inproceedings{ye2023graph,
-  title={Graph Masked Autoencoder for Sequential Recommendation},
-  author={Ye, Yaowen and Xia, Lianghao and Huang, Chao},
-  booktitle={Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR'23), July 23-27, 2023, Taipei, Taiwa},
-  year={2023}
-}
-```
